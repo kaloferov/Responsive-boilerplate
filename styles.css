@@ -1,0 +1,61 @@
+/* Securing old browsers */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+
+/*Whole document styling */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Header styling */
+
+header {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+}
+
+header h1 {
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+
+
