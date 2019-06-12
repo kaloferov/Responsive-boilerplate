@@ -70,7 +70,7 @@ header a {
 [ON BIG SCREENS] */
 
   /* Hide Hamburger */
-  #page-nav label, #hamburger {
+  #main-menu label, #hamburger {
     display: none;
   }
   
@@ -83,14 +83,19 @@ header a {
     display: inline-block;
     box-sizing: border-box;
   }
+  header nav ul li:hover{
+    background:gray;
+  }
+  header nav a:hover {
+    color: white;
+  }
   
   /* [ON SMALL SCREENS] */
   @media screen and (max-width: 768px) {
     /* Show Hamburger */
-    #page-nav label {
+    #main-menu label {
         display: inline-block;
-        color: #fff;
-        background: #a02620;
+        color:black;
         padding: 0px 20px;
         font-size: 23px;
         line-height: 50px;
@@ -100,17 +105,20 @@ header a {
         -ms-user-select: none; /* IE10+/Edge */
          user-select: none; /* Standard */
     }
+    #main-menu label:hover {
+      background: gray;
+    }
   
     /* Break down menu items into vertical */
-    #page-nav ul li {
+    #main-menu ul li {
       display: block;
     }
   
     /* Toggle show/hide menu on checkbox click */
-    #page-nav ul {
+    #main-menu ul {
       display: none;
     }
-    #page-nav input:checked ~ ul {
+    #main-menu input:checked ~ ul {
     display: flex;
     flex-direction: column;
     position: absolute;
