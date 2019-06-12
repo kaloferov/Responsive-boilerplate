@@ -20,6 +20,9 @@ figure {
 body {
     margin: 0;
     font-family: sans-serif;
+    display:flex; 
+    flex-direction:column; 
+    min-height: 100vh;
 }
 
 /* Header styling */
@@ -62,9 +65,9 @@ header a {
     color: black;
 }
 
+/* Hamburger menu styling
 
-
-/* [ON BIG SCREEN] */
+[ON BIG SCREENS] */
 
   /* Hide Hamburger */
   #page-nav label, #hamburger {
@@ -92,7 +95,6 @@ header a {
         font-size: 23px;
         line-height: 50px;
         cursor: pointer;
-
         -webkit-user-select: none; /* Safari */        
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* IE10+/Edge */
@@ -120,5 +122,19 @@ header a {
     }
   }
   
+/* Footer styling */ 
 
+footer {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 3;
+    margin-top:auto; 
+}
 
+footer p {
+    padding: 16px;
+    margin: 0;
+}
