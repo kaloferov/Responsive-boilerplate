@@ -107,6 +107,7 @@ header a {
     }
     #main-menu label:hover {
       background: gray;
+      color: white;
     }
   
     /* Break down menu items into vertical */
@@ -136,13 +137,25 @@ footer {
     background-color: darkgray;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     z-index: 3;
     margin-top:auto; 
 }
-
-footer p {
+footer section {
     padding: 16px;
     margin: 0;
+}
+footer p {
+  margin:0;
+}
+/* FA Icons in the footer */
+footer a {
+  font-size: 21px!important;
+  padding: 3px;
+  color: black;
+}
+footer i:hover {
+  color: white;
 }
