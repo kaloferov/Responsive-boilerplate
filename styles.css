@@ -159,3 +159,11 @@ footer a {
 footer i:hover {
   color: white;
 }
+
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://via.placeholder.com/1200x800");
+  min-height: 100%;
+}
