@@ -15,15 +15,17 @@ figure {
     display: block;
 }
 
+
 /*Whole document styling */
 
 body {
     margin: 0;
     font-family: sans-serif;
-    display:flex; 
-    flex-direction:column; 
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
+
 
 /* Header styling */
 
@@ -65,73 +67,122 @@ header a {
     color: black;
 }
 
+
 /* Hamburger menu styling
 
 [ON BIG SCREENS] */
 
-  /* Hide Hamburger */
-  #main-menu label, #hamburger {
+
+/* Hide Hamburger */
+
+#main-menu label,
+#hamburger {
     display: none;
-  }
-  
-  /* Menu Items */
-  header nav ul {
+}
+
+
+/* Menu Items */
+
+header nav ul {
     margin: 0;
-    padding: 0; 
-  }
-  header nav ul li {
+    padding: 0;
+}
+
+header nav ul li {
     display: inline-block;
     box-sizing: border-box;
-  }
-  header nav ul li:hover{
-    background:gray;
-  }
-  header nav a:hover {
+}
+
+header nav ul li:hover {
+    background: gray;
+}
+
+header nav a:hover {
     color: white;
-  }
-  
-  /* [ON SMALL SCREENS] */
-  @media screen and (max-width: 768px) {
+}
+
+
+/* [ON SMALL SCREENS] */
+
+@media screen and (max-width: 768px) {
     /* Show Hamburger */
     #main-menu label {
         display: inline-block;
-        color:black;
+        color: black;
         padding: 0px 20px;
         font-size: 23px;
         line-height: 50px;
         cursor: pointer;
-        -webkit-user-select: none; /* Safari */        
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* IE10+/Edge */
-         user-select: none; /* Standard */
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+/Edge */
+        user-select: none;
+        /* Standard */
     }
     #main-menu label:hover {
-      background: gray;
-      color: white;
+        background: gray;
+        color: white;
     }
-  
     /* Break down menu items into vertical */
     #main-menu ul li {
-      display: block;
+        display: block;
     }
-  
     /* Toggle show/hide menu on checkbox click */
     #main-menu ul {
-      display: none;
+        display: none;
     }
-    #main-menu input:checked ~ ul {
+    #main-menu input:checked~ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background: darkgray;
+        z-index: 2;
+        width: 50%;
+    }
+}
+
+
+/* Main sections styling */
+
+#hero {
+    background: url(https://via.placeholder.com/1920x1080) no-repeat center center;
+    background-size: cover;
+    height: 93vh;
+    position: static;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 0px;
-    top: 50px;
-    background: darkgray;
-    z-index: 2;
-    width: 50%;
-    }
-  }
-  
-/* Footer styling */ 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 50px;
+    margin: 22px 12px;
+}
+
+#hero button {
+    padding: 15px 32px;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    background-color: #808080;
+    color: white;
+}
+
+#hero button:hover {
+    border: 1px solid #808080;
+    background-color: #a9a9a9;
+    color: black;
+}
+
+
+/* Footer styling */
 
 footer {
     background-color: darkgray;
@@ -141,29 +192,27 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     z-index: 3;
-    margin-top:auto; 
+    margin-top: auto;
 }
+
 footer section {
     padding: 16px;
     margin: 0;
 }
+
 footer p {
-  margin:0;
+    margin: 0;
 }
+
+
 /* FA Icons in the footer */
+
 footer a {
-  font-size: 21px!important;
-  padding: 3px;
-  color: black;
+    font-size: 21px!important;
+    padding: 3px;
+    color: black;
 }
+
 footer i:hover {
-  color: white;
-}
-
-
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("https://via.placeholder.com/1200x800");
-  min-height: 100%;
+    color: white;
 }
