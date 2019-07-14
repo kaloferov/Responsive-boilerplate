@@ -20,6 +20,9 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Sections CSS -->
+    <link rel="stylesheet" href="css/cardsSection.css">
 </head>
 
 <body>
@@ -31,16 +34,16 @@
         </section>
         <section>
             <!-- [NAVIGATION BAR] -->
-            <nav id="main-menu">
+            <nav id="mainMenu">
                 <!-- [THE HAMBURGER] -->
                 <label for="hamburger">&#9776;</label>
                 <input type="checkbox" id="hamburger" />
 
                 <!-- [MENU ITEMS] -->
                 <ul>
-                    <li><a href="#">Menu Item 1</a></li>
-                    <li><a href="#">Menu Item 2</a></li>
-                    <li><a href="#">Menu Item 3</a></li>
+                    <li><a href="#">Menu item</a></li>
+                    <li><a href="#">Menu item</a></li>
+                    <li><a href="#">Menu item</a></li>
                 </ul>
             </nav>
         </section>
@@ -48,49 +51,97 @@
 
     <main>
         <!-- Hero image with text and button -->
-        <section id="hero">
+        <section id="heroSection">
             <h1>Lorem ipsum, dolor sit amet consectetur</h1>
-            <button href="#about">Button</button>
+            <button class="darkButton" href="#about">Button</button>
         </section>
 
         <!-- Cards -->
-        <section id="cards">
-            <h3>PRICING</h3>
-            <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-            <div class="cards-container">
-
-                <div class="card">
-                    <div class="title">Basic</div>
-                    <div class=""><b>10GB</b> Storage</div>
-                    <div class=""><b>10</b> Emails</div>
-                    <div class=""><b>10</b> Domains</div>
-                    <div class=""><b>Endless</b> Support</div>
-                    <div class="">
-                        <h2 class="">$ 10</h2>
-                        <span class="">per month</span>
+        <section id="cardsSection">
+            <h1>PRICING</h1>
+            <p class="">Choose a pricing plan that fits your needs.</p>
+            <div class="cardsContainer">
+                <div class="card ">
+                    <div class="cardTitle centerFlex">
+                        <h1>Title</h1>
                     </div>
-                    <div class="">
-                        <button class="">Sign Up</button>
+                    <div class="cardDescription centerFlex columnFlex">
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="centerFlex columnFlex">
+                        <h1 class="mb0">$9.99</h1>
+                        <p class="mt0">per month</p>
+                    </div>
+
+                    <div class="centerFlex pb5 pt5">
+                        <button class="darkButton">Sign Up</button>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="title">Basic</div>
-                    <div class=""><b>10GB</b> Storage</div>
-                    <div class=""><b>10</b> Emails</div>
-                    <div class=""><b>10</b> Domains</div>
-                    <div class=""><b>Endless</b> Support</div>
-                    <div class="">
-                        <h2 class="">$ 10</h2>
-                        <span class="">per month</span>
+                <div class="card ">
+                    <div class="cardTitle centerFlex">
+                        <h1>Title</h1>
                     </div>
-                    <div class="">
-                        <button class="">Sign Up</button>
+                    <div class="cardDescription centerFlex columnFlex">
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="centerFlex columnFlex">
+                        <h1 class="mb0">$9.99</h1>
+                        <p class="mt0">per month</p>
+                    </div>
+
+                    <div class="centerFlex pb5 pt5">
+                        <button class="darkButton">Sign Up</button>
                     </div>
                 </div>
+                <div class="card ">
+                    <div class="cardTitle centerFlex">
+                        <h1>Title</h1>
+                    </div>
+                    <div class="cardDescription centerFlex columnFlex">
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="centerFlex columnFlex">
+                        <h1 class="mb0">$9.99</h1>
+                        <p class="mt0">per month</p>
+                    </div>
 
+                    <div class="centerFlex pb5 pt5">
+                        <button class="darkButton">Sign Up</button>
+                    </div>
+                </div>
             </div>
 
+        </section>
+
+        <!-- Contact -->
+        <section id="">
+
+            <h1 class="">Contact Us</h1>
+
+            <form class="er" action="/action_page.php" target="_blank">
+                <div class="">
+                    <label>Name</label>
+                    <input class="" type="text" name="Name" required>
+                </div>
+                <div class="">
+                    <label>Email</label>
+                    <input class="" type="text" name="Email" required>
+                </div>
+                <div class="">
+                    <label>Subject</label>
+                    <input class="" name="Subject" required>
+                </div>
+                <div class="">
+                    <label>Message</label>
+                    <input class="" name="Message" required>
+                </div>
+                <button type="submit" class="">Send</button>
+            </form>
+
+            </div>
         </section>
 
         <!-- Contact -->

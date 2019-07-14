@@ -1,3 +1,78 @@
+/* Variables */
+
+:root {
+    --black: black;
+    --white: white;
+    --lightColor: darkgray;
+    --darkColor: gray;
+}
+
+
+/* Pre-made classes */
+
+.flex {
+    display: flex;
+}
+
+.centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.mt0 {
+    margin-top: 0px;
+}
+
+.mb0 {
+    margin-bottom: 0px;
+}
+
+.pb5 {
+    padding-bottom: 5%;
+}
+
+.pt5 {
+    padding-top: 5%;
+}
+
+
+/* Pre-styled element */
+
+.darkButton {
+    max-width: 100%;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--darkColor);
+    color: var(--white);
+}
+
+.darkButton:hover {
+    background-color: var(--lightColor);
+    color: var(--black);
+}
+
+.lightButton {
+    max-width: 100%;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--lightColor);
+    color: var(--white);
+}
+
+.lightButton:hover {
+    background-color: var(--darkColor);
+    color: var(--black);
+}
+
+
 /* Securing old browsers */
 
 @-ms-viewport {
@@ -27,19 +102,10 @@ body {
 }
 
 
-/* Variables */
-
-:root {
-    --main-color: grey;
-    --dark-color: black;
-    --light-color: white;
-}
-
-
 /* Header styling */
 
 header {
-    background-color: darkgray;
+    background-color: var(--lightColor);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +139,7 @@ header a {
     padding: 16px;
     display: flex;
     align-items: center;
-    color: black;
+    color: var(--black);
 }
 
 
@@ -84,7 +150,7 @@ header a {
 
 /* Hide Hamburger */
 
-#main-menu label,
+#mainMenu label,
 #hamburger {
     display: none;
 }
@@ -103,56 +169,11 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    background: gray;
+    background: var(--darkColor);
 }
 
 header nav a:hover {
-    color: white;
-}
-
-
-/* [ON SMALL SCREENS] */
-
-@media screen and (max-width: 768px) {
-    /* Show Hamburger */
-    #main-menu label {
-        display: inline-block;
-        color: black;
-        padding: 0px 20px;
-        font-size: 23px;
-        line-height: 50px;
-        cursor: pointer;
-        -webkit-user-select: none;
-        /* Safari */
-        -moz-user-select: none;
-        /* Firefox */
-        -ms-user-select: none;
-        /* IE10+/Edge */
-        user-select: none;
-        /* Standard */
-    }
-    #main-menu label:hover {
-        background: gray;
-        color: white;
-    }
-    /* Break down menu items into vertical */
-    #main-menu ul li {
-        display: block;
-    }
-    /* Toggle show/hide menu on checkbox click */
-    #main-menu ul {
-        display: none;
-    }
-    #main-menu input:checked~ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 0px;
-        top: 50px;
-        background: darkgray;
-        z-index: 2;
-        width: 50%;
-    }
+    color: var(--white);
 }
 
 
@@ -161,7 +182,7 @@ header nav a:hover {
 
 /* Hero image with text */
 
-#hero {
+#heroSection {
     background: url(https://via.placeholder.com/1920x1080) no-repeat center center;
     background-size: cover;
     height: 93vh;
@@ -175,55 +196,15 @@ header nav a:hover {
 }
 
 #hero h1 {
-    font-size: 50px;
+    font-size: 3.5rem;
     margin: 22px 24px;
 }
-
-#hero button {
-    padding: 15px 32px;
-    border: 1px solid #808080;
-    border-radius: 3px;
-    background-color: #808080;
-    color: white;
-}
-
-#hero button:hover {
-    border: 1px solid #808080;
-    background-color: #a9a9a9;
-    color: black;
-}
-
-
-/* Price cards */
-
-.cards-container {
-    display: flex;
-    justify-content: center;
-}
-
-#cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card {
-    border: 1px solid #808080;
-    margin: 25px;
-    list-style-type: none;
-}
-
-.card-title {
-    background:
-}
-
-.card-row {}
 
 
 /* FOOTER STYLING */
 
 footer {
-    background-color: darkgray;
+    background-color: var(--lightColor);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -245,9 +226,54 @@ footer p {
 footer a {
     font-size: 21px!important;
     padding: 3px;
-    color: black;
+    color: var(--black);
 }
 
 footer i:hover {
-    color: white;
+    color: var(--white);
+}
+
+
+/* [ON SMALL SCREENS] */
+
+@media screen and (max-width: 768px) {
+    /* Show Hamburger */
+    #mainMenu label {
+        display: inline-block;
+        color: var(--black);
+        padding: 0px 20px;
+        font-size: 23px;
+        line-height: 50px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+/Edge */
+        user-select: none;
+        /* Standard */
+    }
+    #mainMenu label:hover {
+        background: var(--darkColor);
+        color: var(--white);
+    }
+    /* Break down menu items into vertical */
+    #mainMenu ul li {
+        display: block;
+    }
+    /* Toggle show/hide menu on checkbox click */
+    #mainMenu ul {
+        display: none;
+    }
+    #mainMenu input:checked~ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background: var(--lightColor);
+        z-index: 2;
+        width: 50%;
+    }
 }
