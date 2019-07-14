@@ -23,6 +23,7 @@
 
     <!-- Sections CSS -->
     <link rel="stylesheet" href="css/cardsSection.css">
+    <link rel="stylesheet" href="css/contactSection.css">
 </head>
 
 <body>
@@ -117,28 +118,16 @@
         </section>
 
         <!-- Contact -->
-        <section id="">
+        <section id="contactSection" class="centerFlex columnFlex">
 
-            <h1 class="">Contact Us</h1>
-
-            <form class="er" action="/action_page.php" target="_blank">
-                <div class="">
-                    <label>Name</label>
-                    <input class="" type="text" name="Name" required>
-                </div>
-                <div class="">
-                    <label>Email</label>
-                    <input class="" type="text" name="Email" required>
-                </div>
-                <div class="">
-                    <label>Subject</label>
-                    <input class="" name="Subject" required>
-                </div>
-                <div class="">
-                    <label>Message</label>
-                    <input class="" name="Message" required>
-                </div>
-                <button type="submit" class="">Send</button>
+            <h1 class="">Contact</h1>
+            <p>Send us a message.</p>
+            <form class="columnFlex" action="" target="_blank">
+                <input class="" type="text" name="Name" placeholder="Name" required>
+                <input class="" type="text" name="Email" placeholder="Email" required>
+                <input class="" name="Subject" placeholder="Subject" required>
+                <textarea rows="4" cols="50" placeholder="Your message"></textarea>
+                <button type="submit" class="darkButton">Send</button>
             </form>
 
             </div>

@@ -1,0 +1,8 @@
+#contactSection h1 {
+    text-align: center;
+}
+
+#contactSection form {
+    width: 50%;
+    max-width: 1000px;
+}
