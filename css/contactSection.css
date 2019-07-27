@@ -3,6 +3,30 @@
 }
 
 #contactSection form {
-    width: 50%;
-    max-width: 1000px;
+    max-width: 100%;
+}
+
+#contactSection input,
+#contactSection textarea,
+#contactSection button {
+    margin: 2%;
+    padding: 1%;
+    resize: none;
+}
+
+#contactSection button {
+    padding: 5%;
+}
+
+#contactSection img {
+    width: 20%;
+}
+
+#contactSection a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactIcons {
+    margin-top: 2%;
 }

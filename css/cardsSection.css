@@ -18,6 +18,11 @@
     margin: 25px;
     list-style-type: none;
     width: 22%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .cardTitle {
@@ -30,8 +35,20 @@
     text-align: center;
 }
 
+
+/* Small devices */
+
 @media screen and (max-width: 768px) {
     .card {
-        width: 35%;
+        width: 40%;
+    }
+}
+
+
+/* Extra small devices */
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 65%;
     }
 }
