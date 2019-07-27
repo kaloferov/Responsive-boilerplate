@@ -1,0 +1,264 @@
+/* Variables */
+
+:root {
+    --black: black;
+    --white: white;
+    --lightColor: darkgray;
+    --darkColor: gray;
+}
+
+
+/* Pre-made classes */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.mt0 {
+    margin-top: 0px;
+}
+
+.mb0 {
+    margin-bottom: 0px;
+}
+
+.mb5 {
+    margin-bottom: 5%;
+}
+
+.ml5 {
+    margin-left: 5%;
+}
+
+.pb5 {
+    padding-bottom: 5%;
+}
+
+.pt5 {
+    padding-top: 5%;
+}
+
+
+/* Pre-styled element */
+
+.darkButton {
+    max-width: 100%;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--darkColor);
+    color: var(--white);
+}
+
+.darkButton:hover {
+    background-color: var(--lightColor);
+    color: var(--black);
+}
+
+.lightButton {
+    max-width: 100%;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--lightColor);
+    color: var(--white);
+}
+
+.lightButton:hover {
+    background-color: var(--darkColor);
+    color: var(--black);
+}
+
+
+/* Securing old browsers */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+
+
+/* Whole document styling */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Header styling */
+
+header {
+    background-color: var(--lightColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+}
+
+header h1 {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+header img {
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+
+
+/* Hamburger menu styling
+
+[ON BIG SCREENS] */
+
+
+/* Hide Hamburger */
+
+#mainMenu label,
+#hamburger {
+    display: none;
+}
+
+
+/* Menu Items */
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+header nav ul li:hover {
+    background: var(--darkColor);
+}
+
+header nav a:hover {
+    color: var(--white);
+}
+
+
+/* FOOTER STYLING */
+
+footer {
+    background-color: var(--lightColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 3;
+    margin-top: auto;
+}
+
+footer section {
+    padding: 16px;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    font-size: 21px!important;
+    padding: 3px;
+    color: var(--black);
+}
+
+footer i:hover {
+    color: var(--white);
+}
+
+
+/* [ON SMALL SCREENS] */
+
+@media screen and (max-width: 768px) {
+    /* Show Hamburger */
+    #mainMenu label {
+        display: inline-block;
+        color: var(--black);
+        padding: 0px 20px;
+        font-size: 23px;
+        line-height: 50px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+/Edge */
+        user-select: none;
+        /* Standard */
+    }
+    #mainMenu label:hover {
+        background: var(--darkColor);
+        color: var(--white);
+    }
+    /* Break down menu items into vertical */
+    #mainMenu ul li {
+        display: block;
+    }
+    /* Toggle show/hide menu on checkbox click */
+    #mainMenu ul {
+        display: none;
+    }
+    #mainMenu input:checked~ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background: var(--lightColor);
+        z-index: 2;
+        width: 50%;
+    }
+}

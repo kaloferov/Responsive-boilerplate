@@ -1,0 +1,54 @@
+/* Price cards */
+
+#cardsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid var(--darkColor);
+    margin: 25px;
+    list-style-type: none;
+    width: 22%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.cardTitle {
+    background-color: var(--darkColor);
+    color: var(--white);
+}
+
+.cardDescription {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+
+/* Small devices */
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+
+/* Extra small devices */
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 65%;
+    }
+}

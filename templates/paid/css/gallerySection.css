@@ -1,0 +1,38 @@
+#gallerySection img {
+    margin: 0.1%;
+    transition: 0.3s;
+}
+
+#gallerySection img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    #gallerySection img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #gallerySection img {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #gallerySection img {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #gallerySection img {
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #gallerySection img {
+        width: 19%;
+    }
+}
