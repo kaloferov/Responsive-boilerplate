@@ -3,8 +3,9 @@
 :root {
     --black: black;
     --white: white;
-    --lightColor: darkgray;
-    --darkColor: gray;
+    --darkColor: #4BA3C3;
+    --lightColor: rgb(38, 81, 97);
+    --gunmetal: #292C35;
 }
 
 
@@ -60,6 +61,7 @@
     border-radius: 3px;
     background-color: var(--darkColor);
     color: var(--white);
+    text-decoration: none;
 }
 
 .darkButton:hover {
@@ -102,19 +104,25 @@ figure {
 
 /* Whole document styling */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: var(--gunmetal);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 
 /* Header styling */
 
 header {
-    background-color: var(--lightColor);
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -148,7 +156,11 @@ header a {
     padding: 16px;
     display: flex;
     align-items: center;
-    color: var(--black);
+    color: var(--white);
+}
+
+.white {
+    color: white;
 }
 
 
