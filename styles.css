@@ -11,6 +11,10 @@
 
 /* Pre-made classes */
 
+.white {
+    color: white;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -27,8 +31,16 @@
     flex-direction: column;
 }
 
+.m10 {
+    margin: 10%;
+}
+
 .mt0 {
     margin-top: 0px;
+}
+
+.mt5 {
+    margin-top: 5%;
 }
 
 .mb0 {
@@ -66,7 +78,14 @@
 
 .darkButton:hover {
     background-color: var(--lightColor);
-    color: var(--black);
+}
+
+.darkButton.pro {
+    background-color: var(--gunmetal);
+}
+
+.darkButton.pro:hover {
+    background-color: #4f5464;
 }
 
 .lightButton {
@@ -122,6 +141,7 @@ body {
 /* Header styling */
 
 header {
+    height: 50.4px;
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -157,6 +177,11 @@ header a {
     display: flex;
     align-items: center;
     color: var(--white);
+}
+
+#logo {
+    width: 160px;
+    margin: 0 16px;
 }
 
 .white {
@@ -198,17 +223,138 @@ header nav a:hover {
 }
 
 
+/* CONTACT */
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+form {
+    width: 320px;
+    margin: 45px auto;
+}
+
+form h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+
+hr.sep {
+    background: var(--darkColor);
+    box-shadow: none;
+    border: none;
+    height: 1px;
+    width: 30%;
+    margin: 0px auto 5% auto;
+}
+
+.group {
+    position: relative;
+    margin: 45px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 320px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: var(--darkColor);
+}
+
+input:focus~.bar:before,
+textarea:focus~.bar:before {
+    width: 320px;
+}
+
+input[type="password"] {
+    letter-spacing: 0.3em;
+}
+
+label {
+    color: #c6c6c6;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    top: 0px;
+    transition: 300ms ease all;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+
+.bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: var(--darkColor);
+    transition: 300ms ease all;
+    left: 0%;
+}
+
+.btn {
+    background: #fff;
+    color: #959595;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-box {
+    text-align: center;
+}
+
+
 /* FOOTER STYLING */
 
 footer {
-    background-color: var(--lightColor);
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    background-color: transparent;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    z-index: 3;
     margin-top: auto;
+    flex-wrap: wrap;
+    display: flex;
+    z-index: 3;
 }
 
 footer section {
@@ -237,19 +383,14 @@ footer i:hover {
     /* Show Hamburger */
     #mainMenu label {
         display: inline-block;
-        color: var(--black);
         padding: 0px 20px;
         font-size: 23px;
         line-height: 50px;
         cursor: pointer;
         -webkit-user-select: none;
-        /* Safari */
         -moz-user-select: none;
-        /* Firefox */
         -ms-user-select: none;
-        /* IE10+/Edge */
         user-select: none;
-        /* Standard */
     }
     #mainMenu label:hover {
         background: var(--darkColor);
