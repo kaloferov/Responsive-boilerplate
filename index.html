@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="John Doe">
 
-    <!-- SEO Ready tags and IE compatibility- Paid version -->
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <!-- SEO Ready tags and IE compatibility -->
+    <meta name="description" content="Responsive HMTL5 theme">
+    <meta name="keywords" content="HTML, CSS, responsive, theme, web">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -22,21 +22,16 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Sections CSS -->
-    <link rel="stylesheet" href="css/heroSection.css">
-    <link rel="stylesheet" href="css/tableSection.css">
     <link rel="stylesheet" href="css/gallerySection.css">
     <link rel="stylesheet" href="css/contactSection.css">
-    <script>
-        function func() {
-            alert('Mara');
-        }
-    </script>
 </head>
 
 <body>
     <header>
         <!-- [Logo and Title] -->
-        <img src="./images/Logo.png" id="logo" alt="logo" />
+        <section>
+            <img src="./images/Logo.png" id="logo" alt="logo" />
+        </section>
         <section>
             <!-- [NAVIGATION BAR] -->
             <nav id="mainMenu">
@@ -46,9 +41,9 @@
 
                 <!-- [MENU ITEMS] -->
                 <ul>
-                    <li><a href="#tableSection">Pricing</a></li>
-                    <li><a href="#">Docs</a></li>
+                    <li><a href="#download">Download</a></li>
                     <li><a href="#contactSection">Contact</a></li>
+                    <li><a href="#aboutSection">About</a></li>
                 </ul>
             </nav>
         </section>
@@ -57,7 +52,8 @@
     <main>
         <!-- Hero image with text and button -->
         <section id="heroSection" class="white mb5">
-            <h1>Build HTML5 projects faster.</h1>
+            <h1>Build web projects faster.</h1>
+            <h2 class="mt0">Fully responsive and universal HTML5 skeleton.</h2>
             <a href="#tableSection" class="darkButton">Start</a>
         </section>
 
@@ -176,17 +172,33 @@
                 </div>
             </form>
         </section>
+
+        <!-- About -->
+        <section id="aboutSection" class="section mb5">
+            <div>
+                <h1 class="white mb5">About Templater</h1>
+                <hr class="sep" />
+            </div>
+
+            <div class="table">
+                Templater is made to serve as a starting point for any web project. It gives you everything for a modern website/web app foundation. It aims to save you time with the build in reponsiveness for all screen sizes. It has basic animations and hover effects.
+                It's also SEO ready and cross-browser compatible.
+            </div>
+        </section>
+
+
     </main>
 
     <footer>
         <section>
             <p class="white">© 2019 All rights reserved.</p>
         </section>
-        <section>
+        <!-- Social links-->
+        <!-- <section>
             <a href=""><i class="white fa fa-facebook-official"></i></a>
             <a href=""><i class="white fa fa-instagram"></i></a>
             <a href=""><i class="white fa fa-linkedin"></i></a>
-        </section>
+        </section> -->
 
     </footer>
 
