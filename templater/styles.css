@@ -26,6 +26,10 @@
     flex-direction: column;
 }
 
+.mlr25 {
+    margin: 0 25%;
+}
+
 .mt0 {
     margin-top: 0px;
 }
