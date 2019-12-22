@@ -1,5 +1,4 @@
 /* Variables */
-
 :root {
     --black: black;
     --white: white;
@@ -8,70 +7,50 @@
     --gunmetal: #292C35;
 }
 
-
 /* Pre-made classes */
-
 .white {
     color: white;
 }
-
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .column {
     display: flex;
     flex-direction: column;
 }
-
 .m10 {
     margin: 10%;
 }
-
 .mt0 {
     margin-top: 0px;
 }
-
 .mt5 {
     margin-top: 5%;
 }
-
 .mb0 {
     margin-bottom: 0px;
 }
-
 .mb5 {
     margin-bottom: 5%;
 }
-
 .ml5 {
     margin-left: 5%;
 }
-
 .pb5 {
     padding-bottom: 5%;
 }
-
 .pt5 {
     padding-top: 5%;
 }
 
-
 /* Pre-styled element */
-
 .darkButton {
     max-width: 100%;
     padding: 15px 32px;
@@ -81,19 +60,15 @@
     color: var(--white);
     text-decoration: none;
 }
-
 .darkButton:hover {
     background-color: var(--lightColor);
 }
-
 .darkButton.pro {
     background-color: var(--gunmetal);
 }
-
 .darkButton.pro:hover {
     background-color: #4f5464;
 }
-
 .lightButton {
     max-width: 100%;
     padding: 15px 32px;
@@ -102,12 +77,10 @@
     background-color: var(--lightColor);
     color: var(--white);
 }
-
 .lightButton:hover {
     background-color: var(--darkColor);
     color: var(--black);
 }
-
 
 /* Securing old browsers */
 
@@ -128,11 +101,9 @@ figure {
 
 
 /* Whole document styling */
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0;
     font-family: sans-serif;
@@ -143,9 +114,7 @@ body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-
 /* Header styling */
-
 header {
     height: 50.4px;
     background-color: transparent;
@@ -156,27 +125,22 @@ header {
     flex-wrap: wrap;
     z-index: 3;
 }
-
 header section {
     display: flex;
     align-items: center;
     height: 100%;
 }
-
 header nav {
     height: 100%;
     display: flex;
 }
-
 header h1 {
     margin: 0 10px;
     cursor: pointer;
 }
-
 header img {
     cursor: pointer;
 }
-
 header a {
     text-decoration: none;
     padding: 16px;
@@ -184,12 +148,10 @@ header a {
     align-items: center;
     color: var(--white);
 }
-
 #logo {
     width: 160px;
     margin: 0 16px;
 }
-
 .white {
     color: white;
 }
@@ -199,7 +161,6 @@ header a {
 
 [ON BIG SCREENS] */
 
-
 /* Hide Hamburger */
 
 #mainMenu label,
@@ -207,27 +168,21 @@ header a {
     display: none;
 }
 
-
 /* Menu Items */
-
 header nav ul {
     margin: 0;
     padding: 0;
 }
-
 header nav ul li {
     display: inline-block;
     box-sizing: border-box;
 }
-
 header nav ul li:hover {
     background: var(--darkColor);
 }
-
 header nav a:hover {
     color: var(--white);
 }
-
 
 /* CONTACT */
 
@@ -298,11 +253,9 @@ input:focus~.bar:before,
 textarea:focus~.bar:before {
     width: 320px;
 }
-
 input[type="password"] {
     letter-spacing: 0.3em;
 }
-
 label {
     color: #c6c6c6;
     font-size: 16px;
@@ -313,13 +266,11 @@ label {
     top: 0px;
     transition: 300ms ease all;
 }
-
 .bar {
     position: relative;
     display: block;
     width: 320px;
 }
-
 .bar:before {
     content: '';
     height: 2px;
@@ -330,7 +281,6 @@ label {
     transition: 300ms ease all;
     left: 0%;
 }
-
 .btn {
     background: #fff;
     color: #959595;
@@ -344,14 +294,12 @@ label {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 .btn-box {
     text-align: center;
 }
 
 
 /* FOOTER STYLING */
-
 footer {
     justify-content: space-between;
     background-color: transparent;
@@ -362,29 +310,23 @@ footer {
     display: flex;
     z-index: 3;
 }
-
 footer section {
     padding: 16px;
     margin: 0;
 }
-
 footer p {
     margin: 0;
 }
-
 footer a {
     font-size: 21px!important;
     padding: 3px;
     color: var(--black);
 }
-
 footer i:hover {
     color: var(--white);
 }
 
-
 /* [ON SMALL SCREENS] */
-
 @media screen and (max-width: 768px) {
     /* Show Hamburger */
     #mainMenu label {
@@ -422,9 +364,7 @@ footer i:hover {
     }
 }
 
-
 /* Hero image with text */
-
 #heroSection {
     background: url("../images/heroBackground.png") no-repeat center center;
     background-size: cover;
@@ -437,13 +377,11 @@ footer i:hover {
     justify-content: center;
     text-align: center;
 }
-
 #heroSection h1 {
     font-size: 3.4rem;
     margin: 22px 24px;
     color: white;
 }
-
 @media screen and (max-width: 576px) {
     #heroSection h1 {
         font-size: 2.8rem;
@@ -451,25 +389,20 @@ footer i:hover {
     }
 }
 
-
 /* Price cards */
 
 .w20 {
     width: 20%
 }
-
 .w60 {
     width: 60%;
 }
-
 .green {
     color: green;
 }
-
 .red {
     color: red;
 }
-
 #tableSection {
     display: flex;
     flex-direction: column;
@@ -498,79 +431,68 @@ footer i:hover {
     flex-direction: column;
 }
 
-.row {
-    padding: 8px;
+.introText {
+    margin: 1% 1% 2% 1;
 }
 
 .lastRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
     justify-content: center;
-    padding-top: 4%;
+    padding-top: 2%;
 }
-
 .lastRow div {
     align-items: center;
 }
-
 .table strong {
     font-size: 1.2rem;
 }
-
 .row:nth-child(even) {
     background-color: #f2f2f2
 }
 
-
 /* Small devices */
-
 @media screen and (max-width: 768px) {
     .card {
         width: 40%;
     }
 }
 
-
 /* Extra small devices */
-
 @media screen and (max-width: 576px) {
     .card {
         width: 65%;
     }
 }
-
 #gallerySection img {
     margin: 0.1%;
     transition: 0.3s;
 }
-
 #gallerySection img:hover {
     transform: scale(1.1);
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-
 @media screen and (max-width: 576px) {
     #gallerySection img {
         width: 80%;
     }
 }
-
 @media screen and (min-width: 576px) {
     #gallerySection img {
         width: 49%;
     }
 }
-
 @media screen and (min-width: 768px) {
     #gallerySection img {
         width: 32%;
     }
 }
-
 @media screen and (min-width: 992px) {
     #gallerySection img {
         width: 24%;
     }
 }
-
 @media screen and (min-width: 1200px) {
     #gallerySection img {
         width: 19%;
