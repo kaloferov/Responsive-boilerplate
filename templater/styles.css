@@ -26,10 +26,6 @@
     flex-direction: column;
 }
 
-.mlr25 {
-    margin: 0 25%;
-}
-
 .mt0 {
     margin-top: 0px;
 }
@@ -46,6 +42,10 @@
     margin-left: 5%;
 }
 
+.mlr25 {
+    margin: 0 10%;
+}
+
 .pb5 {
     padding-bottom: 5%;
 }
@@ -55,7 +55,7 @@
 }
 
 
-/* Pre-styled element */
+/* Pre-styled elements */
 
 .darkButton {
     max-width: 100%;
