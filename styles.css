@@ -50,6 +50,14 @@
     padding-top: 5%;
 }
 
+.ml18px {
+    margin-left: 18px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
 /* Pre-styled element */
 .darkButton {
     max-width: 100%;
@@ -438,10 +446,10 @@ footer i:hover {
 .lastRow {
     display: flex;
     flex-wrap: wrap;
-    padding: 8px;
+    padding: 22px;
     justify-content: center;
-    padding-top: 2%;
 }
+
 .lastRow div {
     align-items: center;
 }
